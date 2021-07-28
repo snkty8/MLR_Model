@@ -226,8 +226,8 @@ var data = [trace1 = {x:xArray, y:yArray, xaxis: 'x', yaxis: 'y', mode:"markers"
   var layout = {
     grid: {rows: 3, columns: 3, pattern: 'independent'},
     autosize: false,
-    width: 1500,
-    height: 1500,
+    width: 2000,
+    height: 2000,
     annotations: [{
       text: "Women: Age Vs. Salary",
         font: {
