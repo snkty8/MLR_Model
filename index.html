@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salary Prediction</title>
+        <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/stlye.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+    <h1>Multiple Linear Regression Dashboard</h1>
+    <h3>This tool is used to predict Salary based on the Kaggle survey dataset</h3>
+</div>
+
+<!--NEW ACTION-->
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+            <!-- <div class="thumbnail"> -->
+            <table class="table table-striped" id="tables">
+                <tr>
+                    <td>0</td>
+                    <td>Prefer not to answer</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Some</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Professional Degree</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bachelors Degree</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Master's Degree</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Doctoral Degree</td>
+            </table>
+        </div>
+
+
+        <div class="col-md-4">
+            <!-- <div class="thumbnail"> -->
+            <table id="tables" class="table table-striped">
+                <tr>
+                    <td> Age </td>
+                    <td> <input type="number" value="0" class="qty" id="qty_age" /></td>
+                </tr>
+                <tr>
+                    <td>Formal Education </td>
+                    <td> <input type="number" value="0" class="qty" id="qty_education" /></td>
+                </tr>
+                <tr>
+                    <td>Years Coding</td>
+                    <td> <input type="number" class="qty" value="0" id="qty_coding" /></td>
+                </tr>
+            </table>
+        </div>
+        <!-- </div> -->
+
+        <div class="col-md-4">
+            <!-- <div class="thumbnail"> -->
+            <table class="table table-striped" id="tables">
+                <tr>
+                    <td>Women's Salary Prediction</td>
+                    <td> <span id="total_value1">0</span></td>
+                </tr>
+                <tr>
+                    <td>Men's Salary Prediction</td>
+                    <td> <span id="total_value2">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--Row -->
+</div>
+<!--Container -->
+<!-- </div> -->
+<hr>
+
+<!--PLOT SECTION-->
+<div class="container-fluid">
+    <div class="col-md-8">
+        <div id="plot"></div>
+    </div>
+</div>
+
+<hr>
+  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="static/js/data_men.js"></script>
+        <script src="static/js/data_women.js"></script>
+        <script src="static/js/app.js"></script>
+        <script src="static/js/plots.js"></script>
+</body>
+</html> 
